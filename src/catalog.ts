@@ -1,5 +1,5 @@
 /* eslint-disable */
-/* THIS FILE WAS AUTO-GENERATED USING CATALOG EXPORTER; YOU SHOULD NOT EDIT THIS FILE; GENERATE TIME: 2024-04-08T09:04:37.816Z; */
+/* THIS FILE WAS AUTO-GENERATED USING CATALOG EXPORTER; YOU SHOULD NOT EDIT THIS FILE; GENERATE TIME: 2024-06-26T12:34:39.635Z; */
 // @ts-ignore ignore unused imports here if they happen (e.g. when there is no measure in the workspace)
 import { newAttribute, newMeasure, IAttribute, IMeasure, IMeasureDefinition, idRef } from "@gooddata/sdk-model";
 
@@ -83,6 +83,12 @@ export const State: IAttribute = newAttribute("state");
  * Attribute ID: type
  */
 export const Type: IAttribute = newAttribute("type");
+/**
+ * Metric Title: sales2
+ * Metric ID: sales2
+ * Metric Type: MAQL Metric
+ */
+export const Sales2: IMeasure<IMeasureDefinition> = newMeasure(idRef("sales2", "measure"));
 /**
  * Metric Title: Test
  * Metric ID: test
@@ -726,9 +732,24 @@ export const DateDatasets = {
 };
 export const Insights = {
   /**
+   * Insight Title: Sales By State Map
+   * Insight ID: 24133c01-e478-4f47-b379-80aa398c3bd4
+   */
+  SalesByStateMap: "24133c01-e478-4f47-b379-80aa398c3bd4"
+  /**
+   * Insight Title: export filters reproducer
+   * Insight ID: 2ed356db-c82e-4495-94f2-c3b1f3054723
+   */,
+  ExportFiltersReproducer: "2ed356db-c82e-4495-94f2-c3b1f3054723"
+  /**
+   * Insight Title: Customer Orders Count Bar Chart
+   * Insight ID: 37c17051-2e7a-4c76-b4b5-f47739f17b91
+   */,
+  CustomerOrdersCountBarChart: "37c17051-2e7a-4c76-b4b5-f47739f17b91"
+  /**
    * Insight Title: Budget per Category
    * Insight ID: b2a3bef9-08af-468d-88db-0c360c6419d9
-   */
+   */,
   BudgetPerCategory: "b2a3bef9-08af-468d-88db-0c360c6419d9"
   /**
    * Insight Title: No. of Customers
@@ -739,7 +760,17 @@ export const Insights = {
    * Insight Title: Billing Calendar
    * Insight ID: c61e6388-2143-46e5-b012-dae47c811d67
    */,
-  BillingCalendar: "c61e6388-2143-46e5-b012-dae47c811d67",
+  BillingCalendar: "c61e6388-2143-46e5-b012-dae47c811d67"
+  /**
+   * Insight Title: Sales By State GeoHeatmap
+   * Insight ID: dfacd58c-4a84-4a24-b00e-c3ad9eedcc1a
+   */,
+  SalesByStateGeoHeatmap: "dfacd58c-4a84-4a24-b00e-c3ad9eedcc1a"
+  /**
+   * Insight Title: Customer Orders Count Table
+   * Insight ID: e0e185e2-d78a-4535-b218-775689575781
+   */,
+  CustomerOrdersCountTable: "e0e185e2-d78a-4535-b218-775689575781",
 };
 export const Dashboards = {
   /**
